@@ -10,14 +10,15 @@ body {
 .collection-container {
   width: 70%;
   max-width: 1200px;
-  padding: 40px 30px;
+  padding: 30px 30px;
+  padding-top: 90px;
   background: url('../../svg/vector.svg') #1d1c1f no-repeat;
-  background-size: 150px;
+  background-size: 250px;
   border-radius: 10px;
   margin: -100px auto;
   margin-bottom: 50px;
   background-position-y: 40px;
-  background-position-x: calc(100% - 50px);
+  background-position-x: calc(50% + 150px);
 }
 h1 {
   color: white;
@@ -30,6 +31,9 @@ h1 {
   text-align: center;
   color: #6F757C;
   text-wrap: balance;
+  max-width: 500px;
+  margin: 10px auto;
+
 }
 .button-section {
   display: flex;
