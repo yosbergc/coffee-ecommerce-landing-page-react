@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/coffee-ecommerce-landing-page-react/static/css/main.d49f06c3.css",
+    "main.js": "/coffee-ecommerce-landing-page-react/static/js/main.8ecc8ade.js",
+    "static/media/bg-cafe.jpg": "/coffee-ecommerce-landing-page-react/static/media/bg-cafe.ed22aff1614ae837ee21.jpg",
+    "static/media/Star_fill.svg": "/coffee-ecommerce-landing-page-react/static/media/Star_fill.6a3dad060cdb5c863b8fcb3095239b5c.svg",
+    "static/media/Star.svg": "/coffee-ecommerce-landing-page-react/static/media/Star.e6c9605c61e0305626b0348906705ab8.svg",
+    "index.html": "/coffee-ecommerce-landing-page-react/index.html",
+    "static/media/vector.svg": "/coffee-ecommerce-landing-page-react/static/media/vector.3e8bd35dd67de4a16bdd.svg",
+    "main.d49f06c3.css.map": "/coffee-ecommerce-landing-page-react/static/css/main.d49f06c3.css.map",
+    "main.8ecc8ade.js.map": "/coffee-ecommerce-landing-page-react/static/js/main.8ecc8ade.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d49f06c3.css",
+    "static/js/main.8ecc8ade.js"
+  ]
+}
