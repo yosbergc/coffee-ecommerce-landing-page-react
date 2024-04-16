@@ -1,0 +1,19 @@
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.ratingContainer .ratingNumber {
+    color: white;
+    font-size: 0.875rem;
+}
+.ratingContainer span {
+    color: #6F757C;
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 0.875rem;
+}
+.ratingContainer .noRatings p {
+    color: #6F757C;
+    font-size: 0.875rem;
+}

@@ -1,4 +1,15 @@
 .productsContainer {
     display: grid;
     justify-content: stretch;
+    gap: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .productsContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1280px) {
+    .productsContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

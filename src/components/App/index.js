@@ -18,7 +18,12 @@ function App() {
           <ButtonComponent isActiveNumber={1} changeCurrentActive={changeCurrentActive} currentActive={currentActive} text={"Available Now"}/>
         </section>
         <ProductsContainer>
-          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={65}/>
+          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
+          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
+          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
+          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
+          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
+          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
         </ProductsContainer>
       </section>
     </div>

@@ -1,4 +1,5 @@
 import './ProductSingle.css'
+import {RatingComponent} from '../RatingComponent'
 function ProductSingle({name, rating, ratingCount, price, photoSrc, isPopular}) {
     return (<article className='ProductSingle'>
         <section className='ProductSingle-ImgBackground' style={{backgroundImage: `url(${photoSrc})`}}>
@@ -10,7 +11,7 @@ function ProductSingle({name, rating, ratingCount, price, photoSrc, isPopular}) 
             <div className='ProductSingle-Info-left'>
                 <h3>{name}</h3>
                 <div className='ratingSection'>
-                    {rating === 0 ? "" : ``}
+                    {<RatingComponent rating={rating} ratingCount={ratingCount}/>}
                 </div>
             </div>
             <div className='ProductSingle-Info-right'>

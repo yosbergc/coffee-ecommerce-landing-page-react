@@ -6,7 +6,7 @@
 .ProductSingle-ImgBackground {
     height: 150px;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
 }
 .popularComponent {
@@ -19,16 +19,17 @@
 }
 .ProductSingle-Info-left h3 {
     color: white;
-    font-weight: 1rem;
+    font-size: 1rem;
 }
 .ProductSingle-Info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 20px 0px;
 }
 .ProductSingle-Info-right p {
     background-color: #BEE3CC;
-    color: black;
+    color: black !important;
     padding: 5px;
     border-radius: 5px;
     font-size: 0.875rem;
