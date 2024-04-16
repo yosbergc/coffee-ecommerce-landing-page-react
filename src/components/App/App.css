@@ -9,7 +9,7 @@ body {
 }
 .collection-container {
   width: 70%;
-  max-width: 900px;
+  max-width: 1200px;
   padding: 40px 30px;
   background: url('../../svg/vector.svg') #1d1c1f no-repeat;
   background-size: 150px;

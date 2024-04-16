@@ -5,7 +5,11 @@ import { ProductSingle } from '../ProductSingle';
 import './App.css';
 function App() {
   let [currentActive, changeCurrentActive] = React.useState(0);
+  let [currentProducts, changeCurrentProducts] = React.useState([])
+  let [isLoading, changeIsLoading] = React.useState(true);
+  React.useEffect(() => {
 
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
