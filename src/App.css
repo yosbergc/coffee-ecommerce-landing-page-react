@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-image: url('./bg-cafe.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #131215;
+}
+.collection-container {
+  width: 100%;
+  max-width: 320px;
+  padding: 40px 20px;
+  background: url('./vector.svg') #1d1c1f no-repeat right;
+  background-size: 150px;
+  border-radius: 10px;
+  margin: -100px auto;
+}
+h1 {
   color: white;
+  text-align: center;
+  font-size: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.collection-container p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #6F757C;
+  text-wrap: balance;
 }
