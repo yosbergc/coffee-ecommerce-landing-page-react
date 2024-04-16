@@ -1,0 +1,35 @@
+.ProductSingle {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+.ProductSingle-ImgBackground {
+    height: 150px;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+}
+.popularComponent {
+    background-color: #F6C768;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.ProductSingle-Info-left h3 {
+    color: white;
+    font-weight: 1rem;
+}
+.ProductSingle-Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ProductSingle-Info-right p {
+    background-color: #BEE3CC;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.875rem;
+}

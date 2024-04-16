@@ -1,5 +1,7 @@
 import React from 'react';
 import { ButtonComponent } from '../ButtonComponent';
+import { ProductsContainer } from '../ProductsContainer';
+import { ProductSingle } from '../ProductSingle';
 import './App.css';
 function App() {
   let [currentActive, changeCurrentActive] = React.useState(0);
@@ -15,6 +17,9 @@ function App() {
           <ButtonComponent isActiveNumber={0} changeCurrentActive={changeCurrentActive} currentActive={currentActive} text={"All Products"}/>
           <ButtonComponent isActiveNumber={1} changeCurrentActive={changeCurrentActive} currentActive={currentActive} text={"Available Now"}/>
         </section>
+        <ProductsContainer>
+          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={65}/>
+        </ProductsContainer>
       </section>
     </div>
   );

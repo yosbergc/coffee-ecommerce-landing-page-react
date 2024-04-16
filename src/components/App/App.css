@@ -2,7 +2,6 @@
   background-image: url('../../img/bg-cafe.jpg');
   height: 300px;
   background-size: cover;
-  background-position: center;
 }
 body {
   min-height: 100vh;
@@ -11,11 +10,13 @@ body {
 .collection-container {
   width: 70%;
   max-width: 900px;
-  padding: 40px 20px;
-  background: url('../../svg/vector.svg') #1d1c1f no-repeat right;
+  padding: 40px 30px;
+  background: url('../../svg/vector.svg') #1d1c1f no-repeat;
   background-size: 150px;
   border-radius: 10px;
   margin: -100px auto;
+  background-position-y: 40px;
+  background-position-x: calc(100% - 50px);
 }
 h1 {
   color: white;

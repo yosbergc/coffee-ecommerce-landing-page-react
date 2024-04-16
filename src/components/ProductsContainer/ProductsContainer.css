@@ -1,0 +1,4 @@
+.productsContainer {
+    display: grid;
+    justify-content: stretch;
+}

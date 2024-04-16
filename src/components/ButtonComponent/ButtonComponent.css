@@ -6,6 +6,7 @@
     font-weight: 600;
     color: #FEF7EE;
     font-size: 0.875rem;
+    transition: 0.3s ease-in-out;
 }
 .button-inactive {
     background: none;
@@ -14,4 +15,8 @@
     color: #FEF7EE;
     font-size: 0.875rem;
     padding: 12px 15px;
+    transition: 0.3s ease-in-out;
+}
+button:hover {
+    cursor: pointer;
 }
