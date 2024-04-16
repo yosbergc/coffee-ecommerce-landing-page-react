@@ -32,8 +32,9 @@ h1 {
   color: #6F757C;
   text-wrap: balance;
   max-width: 500px;
+}
+.mainP {
   margin: 10px auto;
-
 }
 .button-section {
   display: flex;
