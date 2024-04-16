@@ -2,14 +2,25 @@ import React from 'react';
 import { ButtonComponent } from '../ButtonComponent';
 import { ProductsContainer } from '../ProductsContainer';
 import { ProductSingle } from '../ProductSingle';
+import { LoadingComponent } from '../LoadingComponent'
 import './App.css';
 function App() {
   let [currentActive, changeCurrentActive] = React.useState(0);
   let [currentProducts, changeCurrentProducts] = React.useState([])
   let [isLoading, changeIsLoading] = React.useState(true);
+  const API_URL = 'https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json';
   React.useEffect(() => {
-
+    try {
+      fetch(API_URL)
+      .then(res => res.json())
+      .then(data => changeCurrentProducts(data))
+      changeIsLoading(false);
+    } catch (error) {
+      changeIsLoading(false)
+      console.error(error)
+    }
   }, [])
+  let filterProducts = currentActive === 0 ? currentProducts : currentProducts.filter(product => product.available);
   return (
     <div className="App">
       <header className="App-header">
@@ -22,12 +33,19 @@ function App() {
           <ButtonComponent isActiveNumber={1} changeCurrentActive={changeCurrentActive} currentActive={currentActive} text={"Available Now"}/>
         </section>
         <ProductsContainer>
-          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
-          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
-          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
-          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
-          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
-          <ProductSingle name={"Cappuccino"} photoSrc={"https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"} price={"$5.20"} rating={4.7} isPopular={true} ratingCount={60}/>
+          {isLoading && <LoadingComponent/>}
+          {!isLoading && currentProducts.length > 0 && filterProducts.map(producto => {
+            return <ProductSingle
+              name={producto.name}
+              photoSrc={producto.image}
+              price={producto.price}
+              rating={producto.rating}
+              ratingCount={producto.votes}
+              isPopular={producto.popular}
+              isAvailable={producto.available}
+              key={producto.id}
+            />
+          })}
         </ProductsContainer>
       </section>
     </div>
