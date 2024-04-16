@@ -1,5 +1,5 @@
 .App-header {
-  background-image: url('./bg-cafe.jpg');
+  background-image: url('../../img/bg-cafe.jpg');
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -9,10 +9,10 @@ body {
   background-color: #131215;
 }
 .collection-container {
-  width: 100%;
-  max-width: 320px;
+  width: 70%;
+  max-width: 900px;
   padding: 40px 20px;
-  background: url('./vector.svg') #1d1c1f no-repeat right;
+  background: url('../../svg/vector.svg') #1d1c1f no-repeat right;
   background-size: 150px;
   border-radius: 10px;
   margin: -100px auto;
@@ -28,4 +28,9 @@ h1 {
   text-align: center;
   color: #6F757C;
   text-wrap: balance;
+}
+.button-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }

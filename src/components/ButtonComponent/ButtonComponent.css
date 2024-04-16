@@ -1,0 +1,17 @@
+.button-active {
+    background-color: #6F757C;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #FEF7EE;
+    font-size: 0.875rem;
+}
+.button-inactive {
+    background: none;
+    border: none;
+    font-weight: 600;
+    color: #FEF7EE;
+    font-size: 0.875rem;
+    padding: 12px 15px;
+}
