@@ -10,7 +10,6 @@
 .ratingContainer span {
     color: #6F757C;
     font-weight: 600;
-    margin-left: 8px;
     font-size: 0.875rem;
 }
 .ratingContainer .noRatings p {
