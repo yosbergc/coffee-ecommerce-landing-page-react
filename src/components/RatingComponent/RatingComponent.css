@@ -1,7 +1,7 @@
 .ratingContainer {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 2px;
 }
 .ratingContainer .ratingNumber {
     color: white;

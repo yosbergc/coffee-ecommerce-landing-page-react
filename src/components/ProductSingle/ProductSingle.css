@@ -33,10 +33,23 @@
     align-items: flex-start;
     padding: 20px 0px;
 }
-.ProductSingle-Info-right p {
+.ProductSingle-Info-left span {
+    margin-left: 5px;
+}
+.ProductSingle-Info-right .priceTag {
     background-color: #BEE3CC;
     color: black !important;
     padding: 5px;
     border-radius: 5px;
     font-size: 0.875rem;
+}
+.souldOut {
+    background-color: none;
+    color: #ED735D !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+.ratingSection {
+    margin-top: 10px;
 }

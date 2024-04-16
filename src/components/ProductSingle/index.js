@@ -1,6 +1,6 @@
 import './ProductSingle.css'
 import {RatingComponent} from '../RatingComponent'
-function ProductSingle({name, rating, ratingCount, price, photoSrc, isPopular}) {
+function ProductSingle({name, rating, ratingCount, price, photoSrc, isPopular, isAvailable}) {
     return (<article className='ProductSingle'>
         <section className='ProductSingle-ImgBackground' style={{backgroundImage: `url(${photoSrc})`}}>
             {isPopular && <section className='popularComponent'>
@@ -15,7 +15,8 @@ function ProductSingle({name, rating, ratingCount, price, photoSrc, isPopular}) 
                 </div>
             </div>
             <div className='ProductSingle-Info-right'>
-                <p>{price}</p>
+                <p className='priceTag'>{price}</p>
+                {!isAvailable && <p className='souldOut'>Sold Out</p>}
             </div>
         </section>
     </article>)
