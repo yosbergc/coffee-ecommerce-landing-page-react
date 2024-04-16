@@ -1,7 +1,13 @@
 .ProductSingle {
     max-width: 400px;
     width: 100%;
-    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.ProductSingle:hover {
+    background-color: rgb(40, 37, 37);
+    cursor: pointer;
 }
 .ProductSingle-ImgBackground {
     height: 150px;
